@@ -1,8 +1,10 @@
-@media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+@media (min-width:600px) {
+
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
   /* ACCEUIL */
   #infos {
-      height: 400px;
-      padding-left: 15%;
+    height: 400px;
+    padding-left: 15%;
   }
 
   #infos h1 {
@@ -12,6 +14,7 @@
   #infos p {
     font-size: 0.9em;
   }
+
   #button-info p {
     font-size: 1.2em;
     margin-top: 13px;
@@ -20,6 +23,7 @@
   #button-info {
     height: 50px;
   }
+
   /* NOS PROJETS*/
   #link-project .list {
     padding: 5px 25px 5px 25px;
@@ -27,6 +31,7 @@
 }
 
 @media screen and (max-width:800px) {
+
   /* HEADER BLUE LINE */
   #nav-bar a:hover {
     border-bottom: 4px solid #5cadd3
@@ -38,30 +43,38 @@
   }
 }
 
-@media (min-width:801px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
-/* HEADER */
+@media (min-width:801px) {
+
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  /* HEADER */
   #header {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
     height: 60px;
   }
+
   #logo {
     margin-top: -12px;
   }
+
   #nav-bar {
     align-items: center;
   }
+
   #nav-bar li {
     margin-left: 10px;
     font-size: 1em;
   }
+
   #nav-bar a {
-    padding: 45px 10px 0 10px;
+    padding: 30px 10px 0 10px;
   }
+
   #nav-bar a:hover {
     border-top: 5px solid #5cadd3;
   }
+
   /* PORTFOLIO POSITION IMAGE */
   #folio-list {
     flex-direction: row;
@@ -69,20 +82,32 @@
     justify-content: center;
     margin-left: 30px;
   }
-    .folio-img {
+
+  .folio-img {
     margin: 20px 10px 0 10px;
   }
-  /*FOOTER*/
-  #in-form
-  {
-    position: absolute;
-    right: 10%;
-    background: blue;
-    padding: 15px;
-    margin-bottom: 10px;
-  }
-  #txt-form {}
 
+  /*FOOTER*/
+  footer {
+    padding: 0px;
+    background: #5cadd3;
+  }
+
+  iframe {
+    width: 100%;
+    height: 800px;
+    opacity: 0.7;
+  }
+
+  #in-form {
+    z-index: 1;
+    position: absolute;
+    right: 20%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 2px;
+    padding: 15px 15px 30px 15px;
+    margin: 60px 0 10px 0;
+  }
 
   .item-form {
     margin: 10px 80px 10px 80px;
@@ -90,32 +115,69 @@
     height: 10px;
   }
 
+  #txt-form {
+    align-items: flex-start;
+    margin-left: -100px;
+  }
 
-}
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
-  /* ACCEUIL */
-  #infos {
-      height: 600px;
+  #send-message {
+    width: 150px;
+    height: 45px;
+    margin-left: -150px;
   }
 }
 
-@media (min-width:1281px) { /* hi-res laptops and desktops */
+@media (min-width:1025px) {
+
+  /* big landscape tablets, laptops, and desktops */
+  /* ACCEUIL */
+  #infos {
+    height: 600px;
+  }
+}
+
+@media (min-width:1281px) {
+
+  /* hi-res laptops and desktops */
+  /* CLASS ELEMENTS LINE */
+  .line {
+    width: 400px;
+  }
+
   /* SERVICES */
   #main-feature {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: -100px 50px 0 50;
+    margin: -100px 50px 0 50px;
+  }
+
+  .circle {
+    margin: 30px 0px 0 -500px;
   }
 
   #main-feature img {
     width: 50%;
     height: 50%;
   }
+
   #icons {
-    padding-bottom: 120px;
+    padding: 120px 0 120px 0;
   }
+
   #icons p {
-    margin-bottom: -30px;
+    text-align: left;
+    margin: 0px 0 50px 0px;
+    width: 60%;
   }
+
+  #icons h3 {
+    margin: -100px 0 25px -250px;
+  }
+
+  /* FOOTER */
+}
+
+#folio-list {
+  margin: 0 15% 0 15%;
 }
